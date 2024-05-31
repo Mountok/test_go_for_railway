@@ -19,5 +19,5 @@ func main() {
 	})
 
 	// Запускаем сервер на адресе 0.0.0.0:8080
-	router.Run(fmt.Sprintf("0.0.0.0:%s", port))
+	router.Run("0.0.0.0:"+port)
 }
