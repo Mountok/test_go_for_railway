@@ -10,9 +10,7 @@ import (
 func main() {
 	// Создаем роутер Gin
 	router := gin.Default()
-	os.Setenv("PORT_TEST_GO", "8080")
-	os.Setenv("TEST_NAME", "Islam")
-	port := os.Getenv("PORT_TEST_GO")
+	port := os.Getenv("PORT")
 	name := os.Getenv("TEST_NAME")
 
 	// Регистрируем обработчик для корневого пути
